@@ -21,7 +21,7 @@ def predict(img_path):
 
     return prediction
 
-prediction = predict(r'C:\Users\scorp\Desktop\Programmin\Machine Learning\T_Shirt_OR_Pants\unused_data\1f2ba16d-c9a7-4ab9-bbb1-d13114078685.jpg')
+prediction = predict(r'C:\Users\scorp\Desktop\Programmin\Machine Learning\T_Shirt_OR_Pants\Test_data\1f2ba16d-c9a7-4ab9-bbb1-d13114078685.jpg')
 
 if prediction == 0:
     actual_prediction = 'pants'
