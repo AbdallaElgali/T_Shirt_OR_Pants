@@ -3,13 +3,13 @@ import os
 import time
 import keyboard
 
-""" Goal is to collect personal pictures in 3 different types of pictures of Hoodies and TShirts as the dataset to use for the ML module """
+""" Module to collect images to be able to add to the train and test dataset for more personalization, and to check if the model is overfitting or not """
 
 cam = cv2.VideoCapture(0)
-
 image_format = '.png'
+path = r'C:\Users\scorp\Desktop\Programmin\Machine Learning\T_Shirt_OR_Pants\data'  # Change the path to your local directory
 
-os.makedirs(r'C:\Users\scorp\Desktop\Programmin\Machine Learning\T_Shirt_OR_Pants\data', exist_ok=True)
+os.makedirs(path, exist_ok=True)
 count = 0
 while True:
     ret, frame = cam.read()
@@ -19,7 +19,7 @@ while True:
         break
 
 
-    file_name = os.path.join(r'C:\Users\scorp\Desktop\Programmin\Machine Learning\T_Shirt_OR_Pants\data', f'{count}.png')
+    file_name = os.path.join(path, f'{count}.png')
     cv2.imwrite(file_name, frame)
     cv2.imshow('Webcam', frame)
     count = count + 1
