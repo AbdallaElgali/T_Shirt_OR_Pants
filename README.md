@@ -6,6 +6,7 @@ The "T-Shirt or Pants Classifier" is a machine learning project aimed at classif
 ## Project Structure
 - model.py: This script contains the code for data loading, preprocessing, model training, and evaluation.
 - test.py: This script provides functions to load the trained model and make predictions on new images.
+- capture.py: This script allows the user to take images through the webcam of the computer, in order to be added to the dataset for training or testing. 
 - data: This directory stores the training images categorized into t-shirts and pants.
 - Test_data: This directory contains images for testing the trained model.
 
@@ -13,9 +14,11 @@ The "T-Shirt or Pants Classifier" is a machine learning project aimed at classif
 1. Python: The primary programming language for implementing the machine learning algorithms and image processing techniques.
 2. scikit-learn: Utilized for implementing the SVM classifier and grid search for hyperparameter tuning.
 3. NumPy: Used for numerical computations and handling of arrays.
-4. PIL (Python Imaging Library): Employed for image processing tasks such as resizing and converting images to grayscale.
-5. Joblib: Used for saving and loading the trained SVM model.
-6. Anaconda Distribution: The project environment is managed using Anaconda, ensuring easy package installation and dependency management.
+4. OpenCV: Used to simplify the interaction with the computer webcam and the capturing of images.
+5. PIL (Python Imaging Library): Employed for image processing tasks such as resizing and converting images to grayscale.
+6. Joblib: Used for saving and loading the trained SVM model.
+7. Anaconda Distribution: The project environment is managed using Anaconda, ensuring easy package installation and dependency management.
+   
    
 ## Project Workflow
 
@@ -38,5 +41,6 @@ The "T-Shirt or Pants Classifier" is a machine learning project aimed at classif
 The model achieves a high accuracy on the test set, indicating its effectiveness in classifying t-shirts and pants.
 Hyperparameter tuning using grid search helps in optimizing the SVM model for better performance.
 The model is capable of making accurate predictions on unseen images, demonstrating its generalization ability.
+
 
 
